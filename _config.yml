@@ -3,3 +3,22 @@ title: Blog Home
 author: Florian Windolf
 plugins:
   - jekyll-spaceship
+
+jekyll-spaceship:
+  processors:
+    - mermaid-processor
+    - emoji-processor
+  mermaid-processor:
+    mode: default
+    css:
+      class: mermaid
+    syntax:
+      code: "mermaid!"
+      custom: ["@startmermaid", "@endmermaid"]
+    config:
+      theme: default
+    src: https://mermaid.ink/svg/
+  emoji-processor:
+    css:
+      class: emoji
+    src: https://github.githubassets.com/images/icons/emoji/
