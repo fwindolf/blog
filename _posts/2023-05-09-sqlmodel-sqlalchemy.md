@@ -46,32 +46,7 @@ erDiagram
     }
 ```
 
-```mermaid
-erDiagram
-    USER {
-        uuid id
-        string firstname
-        string lastname
-        string email
-    }
-
-    TEAM }|--|{ USER : "combines"
-
-    USER ||--|| TEAM: "is lead"
-
-    TEAM {
-        uuid id
-        string name
-    }
-
-    COMPANY ||--|{ TEAM: "employs"
-
-    COMPANY {
-        uuid id
-        string name
-        string workspace
-    }
-```
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgVVNFUiB7XG4gICAgICAgIHV1aWQgaWRcbiAgICAgICAgc3RyaW5nIGZpcnN0bmFtZVxuICAgICAgICBzdHJpbmcgbGFzdG5hbWVcbiAgICAgICAgc3RyaW5nIGVtYWlsXG4gICAgfVxuXG4gICAgVEVBTSB9fC0tfHsgVVNFUiA6IFwiY29tYmluZXNcIlxuXG4gICAgVVNFUiB8fC0tfHwgVEVBTTogXCJpcyBsZWFkXCJcblxuICAgIFRFQU0ge1xuICAgICAgICB1dWlkIGlkXG4gICAgICAgIHN0cmluZyBuYW1lXG4gICAgfVxuXG4gICAgQ09NUEFOWSB8fC0tfHsgVEVBTTogXCJlbXBsb3lzXCJcblxuICAgIENPTVBBTlkge1xuICAgICAgICB1dWlkIGlkXG4gICAgICAgIHN0cmluZyBuYW1lXG4gICAgICAgIHN0cmluZyB3b3Jrc3BhY2VcbiAgICB9XG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZXJEaWFncmFtXG4gICAgVVNFUiB7XG4gICAgICAgIHV1aWQgaWRcbiAgICAgICAgc3RyaW5nIGZpcnN0bmFtZVxuICAgICAgICBzdHJpbmcgbGFzdG5hbWVcbiAgICAgICAgc3RyaW5nIGVtYWlsXG4gICAgfVxuXG4gICAgVEVBTSB9fC0tfHsgVVNFUiA6IFwiY29tYmluZXNcIlxuXG4gICAgVVNFUiB8fC0tfHwgVEVBTTogXCJpcyBsZWFkXCJcblxuICAgIFRFQU0ge1xuICAgICAgICB1dWlkIGlkXG4gICAgICAgIHN0cmluZyBuYW1lXG4gICAgfVxuXG4gICAgQ09NUEFOWSB8fC0tfHsgVEVBTTogXCJlbXBsb3lzXCJcblxuICAgIENPTVBBTlkge1xuICAgICAgICB1dWlkIGlkXG4gICAgICAgIHN0cmluZyBuYW1lXG4gICAgICAgIHN0cmluZyB3b3Jrc3BhY2VcbiAgICB9XG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)
 
 In this schema, we define three entities: `USER`, `TEAM`, and `COMPANY`. Each entity has its respective attributes, such as `id`, `firstname`, `lastname`, `email`, `name`, and `workspace`.
 
